@@ -1,4 +1,4 @@
-import { ShieldCheck, HandshakeIcon, Award, UserCheck, ArrowRight } from "lucide-react";
+import { ShieldCheck, Handshake, Award, UserCheck, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "./SectionHeading";
 
@@ -9,7 +9,7 @@ const pillars = [
     text: "Implementamos, mantenemos y actualizamos su SG-SST conforme a la Resolución 0312 de 2019, el Decreto 1072 y las normas sectoriales que apliquen.",
   },
   {
-    icon: HandshakeIcon,
+    icon: Handshake,
     title: "Acompañamiento real, no solo papeles",
     text: "Estamos presentes cuando llega el Ministerio, cuando un cliente pide un informe o cuando hay un incidente. No manejamos carpetas, manejamos su tranquilidad.",
   },
