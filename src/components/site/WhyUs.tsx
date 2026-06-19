@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import ceoImg from "@/assets/ceo.jpg";
+import ceoImg from "@/assets/why-us-person.jpg";
 
 const credentials = [
   "+15 años de experiencia en sistemas de gestión legales en Colombia",
