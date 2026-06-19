@@ -58,10 +58,11 @@ function Index() {
         <Services />
         <WhyUs />
         <Process />
-        <Pricing />
-        <Benefits />
-        <MinisterioCta />
+        <WhatsAppGroup />
         <Testimonials />
+        <Blog />
+        <LeadMagnet />
+        <MinisterioCta />
         <Faq />
         <DiagnosticForm />
       </main>
