@@ -25,8 +25,8 @@ export function Footer() {
             {[
               ["#servicios", "Servicios"],
               ["#diferenciales", "Por qué nosotros"],
-              ["#proceso", "Proceso"],
-              ["#planes", "Planes y precios"],
+              ["#comunidad", "Comunidad WhatsApp"],
+              ["#blog", "Blog"],
               ["#faq", "Preguntas frecuentes"],
             ].map(([href, label]) => (
               <li key={href}>
