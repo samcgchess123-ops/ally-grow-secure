@@ -8,10 +8,11 @@ import { SgSstHighlight } from "@/components/site/SgSstHighlight";
 import { Services } from "@/components/site/Services";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Process } from "@/components/site/Process";
-import { Pricing } from "@/components/site/Pricing";
-import { Benefits } from "@/components/site/Benefits";
-import { MinisterioCta } from "@/components/site/MinisterioCta";
+import { WhatsAppGroup } from "@/components/site/WhatsAppGroup";
 import { Testimonials } from "@/components/site/Testimonials";
+import { Blog } from "@/components/site/Blog";
+import { LeadMagnet } from "@/components/site/LeadMagnet";
+import { MinisterioCta } from "@/components/site/MinisterioCta";
 import { Faq } from "@/components/site/Faq";
 import { DiagnosticForm } from "@/components/site/DiagnosticForm";
 import { Footer } from "@/components/site/Footer";
@@ -57,10 +58,11 @@ function Index() {
         <Services />
         <WhyUs />
         <Process />
-        <Pricing />
-        <Benefits />
-        <MinisterioCta />
+        <WhatsAppGroup />
         <Testimonials />
+        <Blog />
+        <LeadMagnet />
+        <MinisterioCta />
         <Faq />
         <DiagnosticForm />
       </main>

@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import ceoImg from "@/assets/ceo.jpg";
+import ceoImg from "@/assets/why-us-person.jpg";
 
 const credentials = [
   "+15 años de experiencia en sistemas de gestión legales en Colombia",
@@ -22,9 +22,9 @@ export function WhyUs() {
               src={ceoImg}
               alt="Yudi Andrea Torres Vásquez, CEO y consultora principal de G3STION SAS"
               loading="lazy"
-              width={1024}
-              height={1024}
-              className="relative z-10 rounded-3xl object-cover shadow-elegant"
+              width={1086}
+              height={1448}
+              className="relative z-10 aspect-[3/4] w-full rounded-3xl object-cover object-top shadow-elegant"
             />
             <div className="absolute -bottom-6 left-1/2 z-20 w-[88%] -translate-x-1/2 rounded-2xl bg-navy p-4 text-center shadow-card">
               <p className="font-display font-bold text-navy-foreground">Yudi Andrea Torres Vásquez</p>
