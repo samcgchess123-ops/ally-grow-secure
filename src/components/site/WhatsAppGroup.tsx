@@ -56,13 +56,14 @@ export function WhatsAppGroup() {
                 ))}
               </div>
 
-              <Button asChild variant="whatsapp" size="lg" className="mt-8">
+              <Button asChild variant="whatsapp" size="lg" className="mt-8 h-auto w-full whitespace-normal py-3 text-center sm:w-auto">
                 <a
                   href={whatsappUrl("Hola G3STION SAS, quiero unirme GRATIS al Grupo de WhatsApp de Marco legal SST Colombia.")}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="size-5" /> ¡Quiero unirme al Grupo de WhatsApp Gratis!
+                  <MessageCircle className="size-5 shrink-0" /> ¡Quiero unirme al Grupo de WhatsApp
+                  Gratis!
                 </a>
               </Button>
 
