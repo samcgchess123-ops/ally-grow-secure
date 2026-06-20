@@ -49,9 +49,9 @@ export function Process() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button asChild variant="navy" size="lg">
-            <a href="#diagnostico">
-              Comenzar con el formulario de diagnóstico <ArrowRight className="size-5" />
+          <Button asChild variant="navy" size="lg" className="h-auto max-w-full whitespace-normal py-3 text-center">
+            <a href="/#diagnostico">
+              Comenzar con el formulario de diagnóstico <ArrowRight className="size-5 shrink-0" />
             </a>
           </Button>
         </div>
