@@ -5,7 +5,7 @@ import { whatsappUrl } from "./config";
 
 const sectors = [
   "Construcción", "Energía", "Industrial", "Manufactura", "Logística",
-  "Salud", "Comercio", "Servicios", "Agroindustria",
+  "Salud", "Comercio", "Servicios", "Agroindustria", "Inmobiliario",
 ];
 
 export function MinisterioCta() {
