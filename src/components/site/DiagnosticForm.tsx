@@ -158,7 +158,7 @@ export function DiagnosticForm() {
                 <Send className="size-5" /> Continuar al calendario
               </Button>
               <p className="mt-3 text-center text-xs text-muted-foreground">
-                Al continuar, enviaremos sus datos por WhatsApp y podrá reservar su cita aquí mismo.
+                Al continuar, pasará al calendario para reservar su cita aquí mismo.
               </p>
             </form>
 
