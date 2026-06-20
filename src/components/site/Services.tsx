@@ -107,9 +107,10 @@ export function Services() {
             </div>
             <h3 className="mt-5 text-2xl font-bold text-navy-foreground">SG-SST Gestionado</h3>
             <p className="mt-3 text-sm leading-relaxed text-navy-foreground/75">
-              El sistema más completo para proteger a su empresa y su equipo. Asumimos el rol legal de
-              responsable de seguridad y salud en el trabajo. Diseñamos, implementamos y mantenemos su
-              sistema mes a mes según la Resolución 0312 de 2019.
+              En Colombia, la resolución 0312 de 2019 exige que toda empresa, sin importar su sector
+              y desde un solo trabajador, tenga un Sistema de Gestión de Seguridad y Salud en el
+              Trabajo. Nosotros lo diseñamos, lideramos su implementación, lo mantenemos y asumimos
+              la Responsabilidad legal de su sistema.
             </p>
             <p className="mt-4 rounded-xl bg-navy-foreground/[0.06] px-4 py-3 text-sm text-navy-foreground/90">
               <span className="font-semibold text-gold">Resultado:</span> Su empresa opera en
@@ -207,9 +208,7 @@ export function Services() {
                     )}
                   >
                     {p.featured && (
-                      <span className="absolute -top-2.5 right-3 rounded-full bg-gold px-2.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wide text-gold-foreground">
-                        Más solicitado
-                      </span>
+                      <span className="absolute -top-2.5 right-3 rounded-full bg-gold/0 px-0 py-0 text-[0.62rem]" />
                     )}
                     <p className="text-[0.7rem] font-bold uppercase tracking-wide text-gold">
                       {p.eyebrow}
