@@ -171,14 +171,9 @@ export function Services() {
         </div>
 
         {/* Expandable blue plans box */}
-        <div
-          id="planes"
-          className={cn(
-            "grid transition-all duration-500 ease-out",
-            showPlans ? "mt-6 grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
-          )}
-        >
-          <div className="overflow-hidden">
+        {showPlans && (
+          <div id="planes" className="mt-6 animate-in fade-in slide-in-from-top-2 duration-300">
+            <div className="overflow-hidden">
             <div className="rounded-3xl bg-gradient-navy p-7 shadow-elegant sm:p-10">
               <div className="text-center">
                 <span className="text-sm font-bold uppercase tracking-[0.18em] text-gold">
