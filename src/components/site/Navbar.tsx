@@ -55,7 +55,7 @@ export function Navbar() {
             </a>
           </Button>
           <Button asChild variant="gold" size="sm">
-            <a href="#diagnostico">Diagnóstico gratuito</a>
+            <a href="/#diagnostico">Diagnóstico gratuito</a>
           </Button>
         </div>
 
