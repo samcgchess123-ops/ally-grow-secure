@@ -247,7 +247,7 @@ export function Services() {
               </p>
             </div>
           </div>
-        </div>
+        )}
 
         {/* Sistemas de gestión / certificaciones */}
         <div className="mx-auto mt-10 flex max-w-3xl flex-col items-center gap-4 rounded-2xl bg-card p-8 text-center shadow-card sm:flex-row sm:justify-between sm:text-left">
