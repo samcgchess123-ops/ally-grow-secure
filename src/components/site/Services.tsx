@@ -107,9 +107,10 @@ export function Services() {
             </div>
             <h3 className="mt-5 text-2xl font-bold text-navy-foreground">SG-SST Gestionado</h3>
             <p className="mt-3 text-sm leading-relaxed text-navy-foreground/75">
-              El sistema más completo para proteger a su empresa y su equipo. Asumimos el rol legal de
-              responsable de seguridad y salud en el trabajo. Diseñamos, implementamos y mantenemos su
-              sistema mes a mes según la Resolución 0312 de 2019.
+              En Colombia, la resolución 0312 de 2019 exige que toda empresa, sin importar su sector
+              y desde un solo trabajador, tenga un Sistema de Gestión de Seguridad y Salud en el
+              Trabajo. Nosotros lo diseñamos, lideramos su implementación, lo mantenemos y asumimos
+              la Responsabilidad legal de su sistema.
             </p>
             <p className="mt-4 rounded-xl bg-navy-foreground/[0.06] px-4 py-3 text-sm text-navy-foreground/90">
               <span className="font-semibold text-gold">Resultado:</span> Su empresa opera en
@@ -170,14 +171,9 @@ export function Services() {
         </div>
 
         {/* Expandable blue plans box */}
-        <div
-          id="planes"
-          className={cn(
-            "grid transition-all duration-500 ease-out",
-            showPlans ? "mt-6 grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
-          )}
-        >
-          <div className="overflow-hidden">
+        {showPlans && (
+          <div id="planes" className="mt-6 animate-in fade-in slide-in-from-top-2 duration-300">
+            <div className="overflow-hidden">
             <div className="rounded-3xl bg-gradient-navy p-7 shadow-elegant sm:p-10">
               <div className="text-center">
                 <span className="text-sm font-bold uppercase tracking-[0.18em] text-gold">
@@ -206,11 +202,6 @@ export function Services() {
                         : "border-navy-foreground/15 bg-navy-foreground/[0.04] hover:border-gold/50",
                     )}
                   >
-                    {p.featured && (
-                      <span className="absolute -top-2.5 right-3 rounded-full bg-gold px-2.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wide text-gold-foreground">
-                        Más solicitado
-                      </span>
-                    )}
                     <p className="text-[0.7rem] font-bold uppercase tracking-wide text-gold">
                       {p.eyebrow}
                     </p>
@@ -256,7 +247,8 @@ export function Services() {
               </p>
             </div>
           </div>
-        </div>
+          </div>
+        )}
 
         {/* Sistemas de gestión / certificaciones */}
         <div className="mx-auto mt-10 flex max-w-3xl flex-col items-center gap-4 rounded-2xl bg-card p-8 text-center shadow-card sm:flex-row sm:justify-between sm:text-left">

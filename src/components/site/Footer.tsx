@@ -23,11 +23,11 @@ export function Footer() {
           <h4 className="text-sm font-bold uppercase tracking-wide text-gold">Navegación</h4>
           <ul className="mt-4 grid gap-2.5 text-sm text-navy-foreground/70">
             {[
-              ["#servicios", "Servicios"],
-              ["#diferenciales", "Por qué nosotros"],
-              ["#comunidad", "Comunidad WhatsApp"],
-              ["#blog", "Blog"],
-              ["#faq", "Preguntas frecuentes"],
+              ["/#servicios", "Servicios"],
+              ["/#diferenciales", "Por qué nosotros"],
+              ["/#comunidad", "Comunidad WhatsApp"],
+              ["/blog", "Blog"],
+              ["/#faq", "Preguntas frecuentes"],
             ].map(([href, label]) => (
               <li key={href}>
                 <a href={href} className="transition-colors hover:text-gold">{label}</a>

@@ -58,17 +58,6 @@ export function DiagnosticForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg =
-      `Hola G3STION SAS, quiero agendar mi diagnóstico gratuito.\n\n` +
-      `Empresa: ${form.empresa}\n` +
-      `Nombre: ${form.nombre}\n` +
-      `Correo: ${form.email}\n` +
-      `Teléfono: ${form.telefono}\n` +
-      `Sector: ${form.sector}\n` +
-      `N° de empleados: ${form.empleados}\n` +
-      `Nivel de riesgo ARL: ${form.riesgo}\n` +
-      `Situación a resolver: ${form.situacion}`;
-    window.open(whatsappUrl(msg), "_blank", "noopener,noreferrer");
     setStep("calendar");
     setTimeout(() => {
       document.getElementById("diagnostico")?.scrollIntoView({ behavior: "smooth" });
@@ -169,7 +158,7 @@ export function DiagnosticForm() {
                 <Send className="size-5" /> Continuar al calendario
               </Button>
               <p className="mt-3 text-center text-xs text-muted-foreground">
-                Al continuar, enviaremos sus datos por WhatsApp y podrá reservar su cita aquí mismo.
+                Al continuar, pasará al calendario para reservar su cita aquí mismo.
               </p>
             </form>
 

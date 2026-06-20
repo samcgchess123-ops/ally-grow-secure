@@ -10,7 +10,6 @@ import { WhyUs } from "@/components/site/WhyUs";
 import { Process } from "@/components/site/Process";
 import { WhatsAppGroup } from "@/components/site/WhatsAppGroup";
 import { Testimonials } from "@/components/site/Testimonials";
-import { Blog } from "@/components/site/Blog";
 import { LeadMagnet } from "@/components/site/LeadMagnet";
 import { MinisterioCta } from "@/components/site/MinisterioCta";
 import { Faq } from "@/components/site/Faq";
@@ -60,11 +59,10 @@ function Index() {
         <Process />
         <WhatsAppGroup />
         <Testimonials />
-        <Blog />
         <LeadMagnet />
         <MinisterioCta />
-        <Faq />
         <DiagnosticForm />
+        <Faq />
       </main>
       <Footer />
       <WhatsAppFloat />

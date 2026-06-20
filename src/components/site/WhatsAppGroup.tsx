@@ -26,12 +26,12 @@ export function WhatsAppGroup() {
     <section id="comunidad" className="bg-secondary py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-elegant">
-          <div className="grid items-center gap-10 p-8 sm:p-12 lg:grid-cols-12 lg:p-16">
+          <div className="grid items-center gap-8 p-6 sm:p-12 lg:grid-cols-12 lg:gap-10 lg:p-16">
             <div className="lg:col-span-7">
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#25D366]/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-[#1c7a44]">
-                <ShieldCheck className="size-4" /> Comunidad de cumplimiento legal
+              <span className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full bg-[#25D366]/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-[#1c7a44]">
+                <ShieldCheck className="size-4 shrink-0" /> Comunidad de cumplimiento legal
               </span>
-              <h2 className="mt-5 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+              <h2 className="mt-5 text-balance text-2xl font-extrabold leading-tight text-navy sm:text-3xl lg:text-4xl">
                 ¿Tu empresa es Riesgo IV o V, o tiene más de 51 empleados?
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -56,13 +56,14 @@ export function WhatsAppGroup() {
                 ))}
               </div>
 
-              <Button asChild variant="whatsapp" size="lg" className="mt-8">
+              <Button asChild variant="whatsapp" size="lg" className="mt-8 h-auto w-full whitespace-normal py-3 text-center sm:w-auto">
                 <a
                   href={whatsappUrl("Hola G3STION SAS, quiero unirme GRATIS al Grupo de WhatsApp de Marco legal SST Colombia.")}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="size-5" /> ¡Quiero unirme al Grupo de WhatsApp Gratis!
+                  <MessageCircle className="size-5 shrink-0" /> ¡Quiero unirme al Grupo de WhatsApp
+                  Gratis!
                 </a>
               </Button>
 

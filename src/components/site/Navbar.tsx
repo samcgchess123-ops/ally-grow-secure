@@ -6,11 +6,11 @@ import { whatsappUrl, DEFAULT_WA_MESSAGE } from "./config";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#servicios", label: "Servicios" },
-  { href: "#diferenciales", label: "Por qué nosotros" },
-  { href: "#comunidad", label: "Comunidad" },
-  { href: "#blog", label: "Blog" },
-  { href: "#faq", label: "Preguntas" },
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/#diferenciales", label: "Por qué nosotros" },
+  { href: "/#comunidad", label: "Comunidad" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#faq", label: "Preguntas" },
 ];
 
 export function Navbar() {
@@ -32,7 +32,7 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#inicio" aria-label="G3STION SAS inicio">
+        <a href="/" aria-label="G3STION SAS inicio">
           <Logo variant="light" />
         </a>
 
@@ -55,7 +55,7 @@ export function Navbar() {
             </a>
           </Button>
           <Button asChild variant="gold" size="sm">
-            <a href="#diagnostico">Diagnóstico gratuito</a>
+            <a href="/#diagnostico">Diagnóstico gratuito</a>
           </Button>
         </div>
 
@@ -84,7 +84,7 @@ export function Navbar() {
           </div>
           <div className="mt-4 flex flex-col gap-2">
             <Button asChild variant="gold">
-              <a href="#diagnostico" onClick={() => setOpen(false)}>
+              <a href="/#diagnostico" onClick={() => setOpen(false)}>
                 Diagnóstico gratuito
               </a>
             </Button>
