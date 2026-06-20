@@ -207,9 +207,6 @@ export function Services() {
                         : "border-navy-foreground/15 bg-navy-foreground/[0.04] hover:border-gold/50",
                     )}
                   >
-                    {p.featured && (
-                      <span className="absolute -top-2.5 right-3 rounded-full bg-gold/0 px-0 py-0 text-[0.62rem]" />
-                    )}
                     <p className="text-[0.7rem] font-bold uppercase tracking-wide text-gold">
                       {p.eyebrow}
                     </p>
