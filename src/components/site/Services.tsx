@@ -247,6 +247,7 @@ export function Services() {
               </p>
             </div>
           </div>
+          </div>
         )}
 
         {/* Sistemas de gestión / certificaciones */}
