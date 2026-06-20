@@ -84,7 +84,7 @@ export function Navbar() {
           </div>
           <div className="mt-4 flex flex-col gap-2">
             <Button asChild variant="gold">
-              <a href="#diagnostico" onClick={() => setOpen(false)}>
+              <a href="/#diagnostico" onClick={() => setOpen(false)}>
                 Diagnóstico gratuito
               </a>
             </Button>
