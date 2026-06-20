@@ -6,11 +6,11 @@ import { whatsappUrl, DEFAULT_WA_MESSAGE } from "./config";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#servicios", label: "Servicios" },
-  { href: "#diferenciales", label: "Por qué nosotros" },
-  { href: "#comunidad", label: "Comunidad" },
-  { href: "#blog", label: "Blog" },
-  { href: "#faq", label: "Preguntas" },
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/#diferenciales", label: "Por qué nosotros" },
+  { href: "/#comunidad", label: "Comunidad" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#faq", label: "Preguntas" },
 ];
 
 export function Navbar() {
