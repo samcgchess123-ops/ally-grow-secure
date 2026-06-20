@@ -43,14 +43,14 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild variant="gold" size="xl">
-              <a href="#diagnostico">
-                Agendar mi diagnóstico gratuito <ArrowRight className="size-5" />
+            <Button asChild variant="gold" size="xl" className="h-auto w-full whitespace-normal py-3.5 text-center sm:w-auto">
+              <a href="/#diagnostico">
+                Agendar mi diagnóstico gratuito <ArrowRight className="size-5 shrink-0" />
               </a>
             </Button>
-            <Button asChild variant="outlineLight" size="xl">
+            <Button asChild variant="outlineLight" size="xl" className="h-auto w-full whitespace-normal py-3.5 text-center sm:w-auto">
               <a href={whatsappUrl(DEFAULT_WA_MESSAGE)} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="size-5" /> Escribir por WhatsApp
+                <MessageCircle className="size-5 shrink-0" /> Escribir por WhatsApp
               </a>
             </Button>
           </div>
