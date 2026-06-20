@@ -32,7 +32,7 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#inicio" aria-label="G3STION SAS inicio">
+        <a href="/" aria-label="G3STION SAS inicio">
           <Logo variant="light" />
         </a>
 
