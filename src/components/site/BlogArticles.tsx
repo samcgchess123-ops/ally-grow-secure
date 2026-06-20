@@ -317,10 +317,10 @@ export function BlogArticles() {
             el cumplimiento legal y la seguridad de tu operación vial.
           </p>
           <div className="mt-6">
-            <Button asChild variant="gold" size="lg">
+            <Button asChild variant="gold" size="lg" className="h-auto max-w-full whitespace-normal py-3 text-center">
               <a href="/#diagnostico">
                 Solicitar un diagnóstico del estado de seguridad vial de tu flota{" "}
-                <ArrowRight className="size-5" />
+                <ArrowRight className="size-5 shrink-0" />
               </a>
             </Button>
           </div>
