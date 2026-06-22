@@ -96,7 +96,7 @@ export function BlogArticles() {
         </section>
 
         {/* ================= ARTÍCULO 2 ================= */}
-        <section className="article-prose border-t border-border pt-16">
+        <section className="article-prose rounded-3xl border border-border bg-card p-6 shadow-card sm:p-9 lg:p-12">
           <p className="article-kicker">Artículo 2: Guía de Consulta sobre Auditorías ISO</p>
           <h2>
             Guía técnica: ¿Qué evalúa un auditor en las normas ISO 9001, 14001 y 45001?
