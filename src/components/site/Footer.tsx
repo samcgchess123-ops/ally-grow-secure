@@ -9,13 +9,10 @@ export function Footer() {
         <div className="lg:col-span-2">
           <Logo variant="light" />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-navy-foreground/70">
-            G3STION SAS presta servicios de implementación y mantenimiento de SG-SST, auditorías,
-            sistemas de gestión ISO, certificación RUC, PESV, gestión documental, capacitación y
-            consultoría especializada para empresas de todos los sectores en Colombia.
-          </p>
-          <p className="mt-4 text-xs text-navy-foreground/50">
-            Empresa legalmente constituida en Colombia hace más de 9 años, con consultores de más de
-            15 años de experiencia en sistemas de gestión y SST.
+            G3STION SAS es una firma legalmente constituida con más de 9 años de trayectoria,
+            respaldada por un equipo con más de 15 años de experiencia. Proveemos soluciones
+            integrales en gestión humana, Sistemas de Gestión, RUC, ISO y sistemas de gestión
+            legales como SG-SST, PESV, entre otros.
           </p>
         </div>
 
