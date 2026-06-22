@@ -76,7 +76,7 @@ export function DiagnosticForm() {
           }
           description={
             step === "form"
-              ? "Responda un breve cuestionario. Con esa información llegamos a la reunión con todo el contexto para ofrecerle la solución precisa. Sin costo y sin compromiso."
+              ? "Evaluamos la situación de su empresa para definir el plan para dar cumplimiento. Responda el cuestionario. Con la información realizamos un análisis para ofrecerle la solución precisa."
               : "Elija el día y la hora que más le convenga. La reserva se confirma al instante, sin salir del sitio."
           }
         />
