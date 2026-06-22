@@ -76,7 +76,7 @@ export function DiagnosticForm() {
           }
           description={
             step === "form"
-              ? "Responda un breve cuestionario. Con esa información llegamos a la reunión con todo el contexto para ofrecerle la solución precisa. Sin costo y sin compromiso."
+              ? "Evaluamos la situación de su empresa para definir el plan para dar cumplimiento. Responda el cuestionario. Con la información realizamos un análisis para ofrecerle la solución precisa."
               : "Elija el día y la hora que más le convenga. La reserva se confirma al instante, sin salir del sitio."
           }
         />
@@ -188,9 +188,10 @@ export function DiagnosticForm() {
               </div>
 
               <div className="rounded-3xl border border-border bg-card p-7 shadow-card sm:p-9">
-                <h3 className="text-lg font-bold text-navy">¿Prefiere hablar directamente?</h3>
+                <h3 className="text-lg font-bold text-navy">¿Prefiere contacto inmediato?</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Escríbanos por WhatsApp al {PHONE_DISPLAY}. Le respondemos en horario laboral.
+                  Escríbanos por WhatsApp al {PHONE_DISPLAY}. Le responderemos en el menor tiempo
+                  posible.
                 </p>
                 <Button asChild variant="whatsapp" size="lg" className="mt-5 w-full">
                   <a

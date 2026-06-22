@@ -1,4 +1,4 @@
-import { AlertTriangle, FileWarning, HeartPulse, Scale, Users } from "lucide-react";
+import { AlertTriangle, HeartPulse, Scale, Users } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 
 const pains = [
@@ -17,11 +17,6 @@ const pains = [
     title: "Accidentes y responsabilidad",
     text: "Sin gestión documental legal, la responsabilidad recae sobre usted y la ARL puede negarse a asumir las prestaciones.",
   },
-  {
-    icon: FileWarning,
-    title: "Documentación inexistente",
-    text: "Una inspección no avisada sin evidencias de gestión pone en riesgo la continuidad de su operación.",
-  },
 ];
 
 export function PainPoints() {
@@ -30,11 +25,11 @@ export function PainPoints() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="El costo de no actuar"
-          title="Lo que le puede costar seguir aplazando este tema"
-          description="Muchas empresas operan meses sin un sistema de gestión en regla, hasta que llega una visita del Ministerio o un cliente exige nuevos requisitos. Para entonces, el costo de no haber actuado a tiempo es mucho mayor."
+          title="¿Qué le cuesta seguir aplazando las obligaciones legales?"
+          description="Muchas empresas operan sin un sistema de gestión en regla... hasta que el riesgo se materializa. Esperar a que ocurra una emergencia, una inspección o una exigencia de un cliente multiplica los costos drásticamente."
         />
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {pains.map((p) => (
             <div
               key={p.title}

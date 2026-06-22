@@ -21,9 +21,9 @@ export function BlogArticles() {
         </div>
       </header>
 
-      <div className="mx-auto max-w-3xl space-y-16 px-5 py-16 lg:px-8 lg:py-20">
+      <div className="mx-auto max-w-3xl space-y-12 px-5 py-16 lg:px-8 lg:py-20">
         {/* ================= ARTÍCULO 1 ================= */}
-        <section className="article-prose">
+        <section className="article-prose rounded-3xl border border-border bg-card p-6 shadow-card sm:p-9 lg:p-12">
           <p className="article-kicker">Artículo 1: Guía de Consulta sobre Estándares Mínimos</p>
           <h2>
             ABC de la Resolución 0312 de 2019: Tabla de consulta rápida de Estándares Mínimos en
@@ -96,7 +96,7 @@ export function BlogArticles() {
         </section>
 
         {/* ================= ARTÍCULO 2 ================= */}
-        <section className="article-prose border-t border-border pt-16">
+        <section className="article-prose rounded-3xl border border-border bg-card p-6 shadow-card sm:p-9 lg:p-12">
           <p className="article-kicker">Artículo 2: Guía de Consulta sobre Auditorías ISO</p>
           <h2>
             Guía técnica: ¿Qué evalúa un auditor en las normas ISO 9001, 14001 y 45001?
@@ -190,7 +190,7 @@ export function BlogArticles() {
         </section>
 
         {/* ================= ARTÍCULO 3 ================= */}
-        <section className="article-prose border-t border-border pt-16">
+        <section className="article-prose rounded-3xl border border-border bg-card p-6 shadow-card sm:p-9 lg:p-12">
           <p className="article-kicker">Artículo 3: Guía de Consulta sobre Seguridad Vial</p>
           <h2>
             Guía de consulta: ¿Está tu empresa obligada a implementar el PESV? (Criterios y Pasos

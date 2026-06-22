@@ -1,14 +1,13 @@
-import { ShieldCheck, TrendingDown, FolderCheck, Repeat, Briefcase, UserCheck, Building2 } from "lucide-react";
+import { ShieldCheck, FolderCheck, Repeat, Briefcase, Gavel, ScrollText } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 
 const benefits = [
-  { icon: TrendingDown, title: "Menor riesgo de sanciones", text: "Reduzca la exposición a multas y requerimientos legales." },
-  { icon: ShieldCheck, title: "Tranquilidad ante auditorías", text: "Llegue preparado a cualquier inspección o visita." },
-  { icon: FolderCheck, title: "Documentación organizada", text: "Evidencias auditables y al día en todo momento." },
+  { icon: ShieldCheck, title: "Blindaje ante sanciones", text: "Reduzca la exposición a multas y requerimientos legales." },
+  { icon: Gavel, title: "Tranquilidad ante auditorías", text: "Llegue preparado a cualquier inspección o visita." },
+  { icon: FolderCheck, title: "Evidencias en orden", text: "Soportes auditables y al día en todo momento." },
   { icon: Repeat, title: "Cumplimiento continuo", text: "Un sistema activo mes a mes, no solo una implementación puntual." },
-  { icon: Briefcase, title: "Más oportunidades de contratación", text: "Cumpla los requisitos que exigen clientes y licitaciones." },
-  { icon: UserCheck, title: "Acompañamiento experto", text: "Un equipo especializado responde por usted." },
-  { icon: Building2, title: "Permanencia y crecimiento", text: "Proteja la continuidad y la expansión de su negocio." },
+  { icon: Briefcase, title: "Apertura comercial", text: "Cumpla los requisitos que exigen clientes y licitaciones." },
+  { icon: ScrollText, title: "Rol legal cubierto", text: "Asumimos formalmente la responsabilidad de sus sistemas." },
 ];
 
 export function Benefits() {

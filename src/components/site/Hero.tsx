@@ -28,18 +28,18 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-32 lg:grid-cols-12 lg:px-8 lg:pb-28 lg:pt-40">
         <div className="lg:col-span-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-gold">
-            <ShieldCheck className="size-4" /> Aliado permanente en SG-SST y certificaciones
+            <ShieldCheck className="size-4" /> ALIADO PERMANENTE EN LA GESTIÓN DE SU EMPRESA
           </span>
 
           <h1 className="mt-6 text-balance text-4xl font-extrabold leading-[1.08] text-navy-foreground sm:text-5xl lg:text-6xl">
-            Cumpla con la normativa SST{" "}
-            <span className="text-gold">sin complicaciones</span> y siga creciendo con tranquilidad.
+            Cumpla con los requisitos legales y de sus clientes y{" "}
+            <span className="text-gold">crezca con tranquilidad</span>.
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy-foreground/80">
-            En G3STION SAS acompañamos a pymes y microempresas colombianas a cumplir las normativas
-            legales y de clientes de forma permanente. Podemos asumir formal y legalmente la
-            responsabilidad de su SG-SST, para que usted enfoque su energía en su negocio.
+            En G3STION SAS garantizamos el cumplimiento normativo. Asumimos la responsabilidad legal
+            de sus Sistemas de Gestión, para que pueda centrar su enfoque en la operación y
+            rentabilidad de su negocio.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

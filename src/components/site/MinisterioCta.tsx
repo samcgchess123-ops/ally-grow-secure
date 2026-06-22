@@ -23,8 +23,8 @@ export function MinisterioCta() {
           ¿Recibió una visita del Ministerio o un cliente le exige RUC?
         </h2>
         <p className="mt-4 text-lg text-navy-foreground/80">
-          No espere a que el problema crezca. Revisamos su situación y le ayudamos a preparar la
-          documentación necesaria antes de que sea tarde.
+          No deje el futuro de su empresa al azar. Evaluamos su estado actual, estructuramos el plan
+          ideal e iniciamos el proyecto hoy mismo.
         </p>
         <Button asChild variant="gold" size="xl" className="mt-8">
           <a

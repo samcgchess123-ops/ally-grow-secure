@@ -6,11 +6,11 @@ const pillars = [
   {
     icon: ShieldCheck,
     title: "Cumplimiento legal activo",
-    text: "Implementamos, mantenemos y actualizamos su SG-SST conforme a la Resolución 0312 de 2019, el Decreto 1072 y las normas sectoriales que apliquen.",
+    text: "Implementamos, mantenemos y actualizamos sus sistemas de gestión conforme a la Resolución 0312 de 2019, el Decreto 1072 y las normas sectoriales que apliquen.",
   },
   {
     icon: Handshake,
-    title: "Acompañamiento real, no solo papeles",
+    title: "Acompañamiento de Valor",
     text: "Estamos presentes cuando llega el Ministerio, cuando un cliente pide un informe o cuando hay un incidente. No manejamos carpetas, manejamos su tranquilidad.",
   },
   {
@@ -20,7 +20,7 @@ const pillars = [
   },
   {
     icon: UserCheck,
-    title: "Talento humano y contratación",
+    title: "Talento Humano y Contratación",
     text: "Diseñamos estrategias de contratación legales, administramos nómina y prestaciones, blindándolo ante la UGPP.",
   },
 ];
@@ -36,8 +36,8 @@ export function Solution() {
         <SectionHeading
           invert
           eyebrow="La solución"
-          title="Acompañamiento permanente que convierte el cumplimiento en ventaja competitiva"
-          description="G3STION SAS no llega, entrega un documento firmado y desaparece. Asumimos formalmente el rol legal de responsables del SG-SST, diseñamos el sistema según su sector y lo mantenemos activo y actualizado mes a mes."
+          title="Acompañamiento que convierte el cumplimiento en ventaja competitiva"
+          description="En G3STION SAS nos convertimos en su aliado estratégico: asumimos formalmente la responsabilidad legal de sus sistemas de gestión, programas y planes normativos, diseñando soluciones a la medida de su sector, manteniéndolas actualizadas mes a mes."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2">
