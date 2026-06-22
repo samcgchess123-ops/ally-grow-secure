@@ -11,6 +11,7 @@ import { Process } from "@/components/site/Process";
 import { WhatsAppGroup } from "@/components/site/WhatsAppGroup";
 import { Testimonials } from "@/components/site/Testimonials";
 import { LeadMagnet } from "@/components/site/LeadMagnet";
+import { Benefits } from "@/components/site/Benefits";
 import { MinisterioCta } from "@/components/site/MinisterioCta";
 import { Faq } from "@/components/site/Faq";
 import { DiagnosticForm } from "@/components/site/DiagnosticForm";
@@ -53,13 +54,14 @@ function Index() {
         <Metrics />
         <PainPoints />
         <Solution />
-        <SgSstHighlight />
         <Services />
+        <SgSstHighlight />
         <WhyUs />
         <Process />
         <WhatsAppGroup />
         <Testimonials />
         <LeadMagnet />
+        <Benefits />
         <MinisterioCta />
         <DiagnosticForm />
         <Faq />

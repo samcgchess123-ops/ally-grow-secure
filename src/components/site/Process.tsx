@@ -5,23 +5,23 @@ import { SectionHeading } from "./SectionHeading";
 const steps = [
   {
     n: "01",
-    title: "Responda unas preguntas rápidas",
-    text: "Complete un formulario breve de diagnóstico. Le tomará menos de 5 minutos y nos permite entender el tamaño, sector y nivel de riesgo de su empresa.",
+    title: "Complete el formulario y agende",
+    text: "Responda un breve cuestionario con los datos de su empresa y reserve un espacio en nuestro calendario. Le tomará pocos minutos.",
   },
   {
     n: "02",
-    title: "Evaluamos su situación",
-    text: "Revisamos sus respuestas y confirmamos si podemos ayudarle. Si hay un encaje claro, le asignamos un espacio en el calendario de un consultor experto.",
+    title: "Asista a la reunión",
+    text: "Conversamos sobre el estado actual de su empresa, identificamos riesgos y entendemos qué necesita para cumplir.",
   },
   {
     n: "03",
-    title: "Llamada de diagnóstico gratuita",
-    text: "Una conversación de 20 minutos donde revisamos el estado actual frente a la normativa, identificamos riesgos inmediatos y le presentamos opciones. Sin compromiso.",
+    title: "Presentación de la propuesta",
+    text: "Le presentamos una solución a la medida de su sector, con alcance, plazos e inversión claros.",
   },
   {
     n: "04",
-    title: "Implementamos la solución",
-    text: "Si decide avanzar, entregamos un plan de trabajo con cronograma e informes de gestión periódicos. Tiene un interlocutor directo desde el primer día.",
+    title: "Aprobación y plan de trabajo",
+    text: "Una vez aprobada la propuesta, definimos el cronograma y comenzamos la ejecución con un interlocutor directo.",
   },
 ];
 
