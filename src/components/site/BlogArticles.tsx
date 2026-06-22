@@ -190,7 +190,7 @@ export function BlogArticles() {
         </section>
 
         {/* ================= ARTÍCULO 3 ================= */}
-        <section className="article-prose border-t border-border pt-16">
+        <section className="article-prose rounded-3xl border border-border bg-card p-6 shadow-card sm:p-9 lg:p-12">
           <p className="article-kicker">Artículo 3: Guía de Consulta sobre Seguridad Vial</p>
           <h2>
             Guía de consulta: ¿Está tu empresa obligada a implementar el PESV? (Criterios y Pasos
