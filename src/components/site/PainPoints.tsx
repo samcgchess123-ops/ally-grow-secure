@@ -1,3 +1,6 @@
+import { Scale, Users, HeartPulse, AlertTriangle } from "lucide-react";
+import { SectionHeading } from "./SectionHeading";
+
 const pains = [
   {
     icon: Scale,
