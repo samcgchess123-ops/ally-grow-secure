@@ -1,10 +1,11 @@
 import { MessageCircle } from "lucide-react";
-import { whatsappUrl, DEFAULT_WA_MESSAGE } from "./config";
+
+const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/JJX7GBLVS7EBl7tPt7jPDx?mode=gi_t";
 
 export function WhatsAppFloat() {
   return (
     <a
-      href={whatsappUrl(DEFAULT_WA_MESSAGE)}
+      href={WHATSAPP_GROUP_URL}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escribir por WhatsApp"
