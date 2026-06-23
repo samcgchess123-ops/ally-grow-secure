@@ -6,12 +6,12 @@ const pillars = [
   {
     icon: ShieldCheck,
     title: "Cumplimiento legal activo",
-    text: "Implementamos, mantenemos y mejoramos sus Sistemas de Gestión, Planes y Programas conforme al Decreto 1072 de 2015, las Resoluciones 0312 de 2019, 0491 de 2020, 4272 de 2021, 40595 de 2022 y las normas sectoriales aplicables.",
+    text: "Implementamos, mantenemos y actualizamos sus sistemas de gestión conforme a la Resolución 0312 de 2019, el Decreto 1072 y las normas sectoriales que apliquen.",
   },
   {
     icon: Handshake,
     title: "Acompañamiento de Valor",
-    text: "Estamos presentes cuando llega el Ministerio, cuando un cliente le exige un requisito o si ocurre un accidente.",
+    text: "Estamos presentes cuando llega el Ministerio, cuando un cliente pide un informe o cuando hay un incidente. No manejamos carpetas, manejamos su tranquilidad.",
   },
   {
     icon: Award,
@@ -21,7 +21,7 @@ const pillars = [
   {
     icon: UserCheck,
     title: "Talento Humano y Contratación",
-    text: "Diseñamos estrategias de contratación de personal y administramos su nómina, blindándote ante la UGPP o demandas laborales.",
+    text: "Diseñamos estrategias de contratación legales, administramos nómina y prestaciones, blindándolo ante la UGPP.",
   },
 ];
 
@@ -37,7 +37,7 @@ export function Solution() {
           invert
           eyebrow="La solución"
           title="Acompañamiento que convierte el cumplimiento en ventaja competitiva"
-          description="En G3STION SAS nos convertimos en su aliado estratégico: asumimos formalmente la responsabilidad legal de sus sistemas de gestión, programas y planes normativos, diseñando soluciones a la medida de su sector."
+          description="En G3STION SAS nos convertimos en su aliado estratégico: asumimos formalmente la responsabilidad legal de sus sistemas de gestión, programas y planes normativos, diseñando soluciones a la medida de su sector, manteniéndolas actualizadas mes a mes."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2">

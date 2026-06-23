@@ -1,6 +1,6 @@
 // Central contact + lead config for G3STION SAS
 export const WHATSAPP_NUMBER = "573216989013";
-export const EMAIL = "info@g3stion.com";
+export const EMAIL = "g3stionsas@gmail.com";
 export const PHONE_DISPLAY = "+57 321 698 9013";
 export const INSTAGRAM = "g3stionsas";
 

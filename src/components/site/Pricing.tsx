@@ -7,23 +7,23 @@ const plans = [
     name: "7 estándares mínimos",
     price: "$300.000",
     period: "/ mes",
-    desc: "Empleadores con 10 o menos trabajadores que estén clasificados en riesgo I, II o III en la ARL.",
-    features: ["Se enfoca en los pilares fundamentales: afiliación a seguridad social, estructuración del plan de trabajo, ejecuciones de capacitación, realización de evaluaciones médicas ocupacionales e identificación de peligros."],
+    desc: "Para empresas pequeñas de menor nivel de riesgo.",
+    features: ["Diseño e implementación", "Mantenimiento mensual", "Apoyo en inspecciones"],
   },
   {
     name: "21 estándares mínimos",
     price: "$700.000",
     period: "/ mes",
-    desc: "Empleadores con 11 a 50 trabajadores que estén clasificados en riesgo I, II o III en la ARL.",
-    features: ["Suma a la base de siete estándares, la gestión organizativa y de respuesta: conformación del COPASST y del Comité de Convivencia Laboral, estructuración de la brigada de emergencias e investigación obligatoria de accidentes de trabajo."],
+    desc: "Para empresas en crecimiento que necesitan más estructura.",
+    features: ["Todo lo del plan anterior", "Capacitaciones obligatorias", "Informes de gestión"],
     featured: true,
   },
   {
     name: "60 estándares mínimos",
     price: "$1.500.000",
     period: "/ mes",
-    desc: "Empleadores con 50 o menos trabajadores siempre y cuando estén clasificados en Riesgo IV o V en la ARL.",
-    features: ["Contempla el ciclo completo del Sistema de Gestión. Integra los puntos anteriores y añade el control estratégico: auditorías anuales, medición de indicadores obligatorios, control de contratistas y diseño de programas de vigilancia epidemiológica (médicos especializados)."],
+    desc: "Para empresas con mayor riesgo o exigencias de clientes.",
+    features: ["Matriz legal actualizada", "Acompañamiento integral", "Preparación de auditorías"],
   },
 ];
 
@@ -33,8 +33,8 @@ export function Pricing() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Planes y precios"
-          title="Acompañamiento de acuerdo con el tamaño y nivel de riesgo de su empresa."
-          description="Valores de referencia 'desde'; el alcance exacto se define en su diagnóstico gratuito."
+          title="Acompañamiento mensual estructurado por su nivel de riesgo"
+          description="Planes claros según el tamaño y nivel de riesgo de su empresa. Valores de referencia 'desde'; el alcance exacto se define en su diagnóstico gratuito."
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -68,8 +68,8 @@ export function Pricing() {
               </div>
               <ul className="mt-6 grid gap-3">
                 {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm">
-                    <Check className={`mt-0.5 size-4 shrink-0 ${p.featured ? "text-gold" : "text-gold-foreground"}`} strokeWidth={3} />
+                  <li key={f} className="flex items-center gap-2.5 text-sm">
+                    <Check className={`size-4 shrink-0 ${p.featured ? "text-gold" : "text-gold-foreground"}`} strokeWidth={3} />
                     <span className={p.featured ? "text-navy-foreground/90" : "text-navy"}>{f}</span>
                   </li>
                 ))}

@@ -2,11 +2,10 @@ import { ShieldCheck, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const points = [
-  "Asumimos la responsabilidad legal del SG-SST, la administración del PESV y de los programas como trabajo en alturas y espacios confinados.",
-  "Diseñamos e implementamos sus Sistemas de Gestión a la medida, adaptándonos al sector económico, el tamaño y el nivel de riesgo de su empresa.",
-  "Garantizamos el mantenimiento y la mejora de su ecosistema de gestión, manteniéndolo actualizado y listo para cualquier auditoría.",
-  "Optimizamos su presupuesto apalancándonos en los recursos de las ARL, cajas de compensación e intermediarios.",
-  "Respondemos ante el Ministerio de Trabajo, entes certificadores y exigencias de sus clientes.",
+  "Asumimos formalmente el rol legal de responsable de sus sistemas de gestión",
+  "Administrador PESV y de programas de alturas y espacios confinados",
+  "Diseño del sistema según el sector y nivel de riesgo de su empresa",
+  "Sistema activo y actualizado mes a mes, sin depender de usted",
 ];
 
 export function SgSstHighlight() {
@@ -23,7 +22,9 @@ export function SgSstHighlight() {
                 Asumimos la responsabilidad legal de su sistema
               </h2>
               <p className="mt-4 text-base leading-relaxed text-navy-foreground/75">
-                Cuando firma con G3STION SAS, contrata a un aliado que ejecuta con usted, asume la responsabilidad y responde ante el Ministerio de Trabajo, otros entes legales, sus clientes y las auditorías de certificación.
+                Cuando firma con G3STION SAS no contrata a alguien que le explica qué hacer. Contrata
+                a alguien que lo hace con usted y responde por ello ante el Ministerio, sus clientes y
+                las auditorías.
               </p>
               <Button asChild variant="gold" size="lg" className="mt-8">
                 <a href="#diagnostico">
