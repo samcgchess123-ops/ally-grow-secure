@@ -20,7 +20,7 @@ export function MinisterioCta() {
           <AlertCircle className="size-7" />
         </div>
         <h2 className="mt-6 text-balance text-3xl font-extrabold leading-tight text-navy-foreground sm:text-4xl">
-          ¿Recibió una visita del Ministerio o un cliente le exige RUC?
+          ¿Visita del Ministerio o exigencias de un cliente?
         </h2>
         <p className="mt-4 text-lg text-navy-foreground/80">
           No deje el futuro de su empresa al azar. Evaluamos su estado actual, estructuramos el plan
