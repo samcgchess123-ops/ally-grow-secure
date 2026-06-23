@@ -14,7 +14,7 @@ const pains = [
   },
   {
     icon: HeartPulse,
-    title: "Accidentes y responsabilidad civil o penal",
+    title: "Accidentes y responsabilidad legal",
     text: "Ante un siniestro laboral, la gestión documental es el mejor soporte, de lo contrario la ARL puede objetar la cobertura de las prestaciones, trasladando la responsabilidad sobre la empresa.",
   },
 ];
