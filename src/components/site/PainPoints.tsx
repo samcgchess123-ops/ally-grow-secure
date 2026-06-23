@@ -1,21 +1,18 @@
-import { AlertTriangle, HeartPulse, Scale, Users } from "lucide-react";
-import { SectionHeading } from "./SectionHeading";
-
 const pains = [
   {
     icon: Scale,
     title: "Multas y sanciones legales",
-    text: "Una auditoría o requerimiento inesperado puede traducirse en sanciones, retrasos operativos y pérdida de contratos.",
+    text: "Una auditoría o un requerimiento pueden traducirse en multas económicas e, incluso, en el cierre de su negocio.",
   },
   {
     icon: Users,
     title: "Pérdida de clientes y contratos",
-    text: "Cada vez más empresas exigen a sus proveedores estándares como RUC, BASC o normas ISO. Sin un sistema funcionando, pierde oportunidades.",
+    text: "Las empresas exigen requisitos como RUC, BASC o normas ISO. Operar sin estos sistemas lo deja fuera de mejores oportunidades comerciales.",
   },
   {
     icon: HeartPulse,
-    title: "Accidentes y responsabilidad",
-    text: "Sin gestión documental legal, la responsabilidad recae sobre usted y la ARL puede negarse a asumir las prestaciones.",
+    title: "Accidentes y responsabilidad civil o penal",
+    text: "Ante un siniestro laboral, la gestión documental es el mejor soporte, de lo contrario la ARL puede objetar la cobertura de las prestaciones, trasladando la responsabilidad sobre la empresa.",
   },
 ];
 
