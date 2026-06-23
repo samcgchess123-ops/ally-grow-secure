@@ -42,31 +42,37 @@ const services = [
 const plans = [
   {
     id: "esencial",
-    eyebrow: "",
+    eyebrow: "Cumplimiento esencial",
     standards: "7 estándares mínimos",
     price: "$300.000",
-    daily: "Empleadores con 10 o menos trabajadores que estén clasificados en riesgo I, II o III en la ARL.",
-    features: ["Se enfoca en los pilares fundamentales: afiliación a seguridad social, estructuración del plan de trabajo, ejecuciones de capacitación, realización de evaluaciones médicas ocupacionales e identificación de peligros."],
+    daily: "Empresas pequeñas de menor nivel de riesgo.",
+    features: ["Diseño e implementación", "Mantenimiento mensual", "Apoyo en inspecciones"],
   },
   {
     id: "integral",
-    eyebrow: "",
+    eyebrow: "Cumplimiento integral",
     standards: "21 estándares mínimos",
     price: "$700.000",
-    daily: "Empleadores con 11 a 50 trabajadores que estén clasificados en riesgo I, II o III en la ARL.",
+    daily: "Empresas en crecimiento que buscan cumplimiento sólido y prevención de riesgos.",
     features: [
-      "Suma a la base de siete estándares, la gestión organizativa y de respuesta: conformación del COPASST y del Comité de Convivencia Laboral, estructuración de la brigada de emergencias e investigación obligatoria de accidentes de trabajo.",
+      "Todo lo del nivel esencial",
+      "Capacitaciones obligatorias",
+      "Informes de gestión mensuales",
+      "Acompañamiento experto",
     ],
     featured: true,
   },
   {
     id: "corporativo",
-    eyebrow: "",
+    eyebrow: "Cumplimiento corporativo",
     standards: "60 estándares mínimos",
     price: "$1.500.000",
-    daily: "Empleadores con 50 o menos trabajadores siempre y cuando estén clasificados en Riesgo IV o V en la ARL.",
+    daily: "Empresas con mayor riesgo o exigencias de grandes clientes.",
     features: [
-      "Contempla el ciclo completo del Sistema de Gestión. Integra los puntos anteriores y añade el control estratégico: auditorías anuales, medición de indicadores obligatorios, control de contratistas y diseño de programas de vigilancia epidemiológica (médicos especializados).",
+      "Todo lo del nivel integral",
+      "Matriz legal actualizada",
+      "Acompañamiento integral",
+      "Preparación de auditorías",
     ],
   },
 ];
@@ -184,7 +190,9 @@ export function Services() {
               SG-SST · Acompañamiento Permanente
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-navy-foreground/75">
-              En Colombia, la resolución 0312 de 2019 establece que los empleadores, sin importar su sector y desde un solo trabajador, tenga un Sistema de Gestión de Seguridad y Salud en el Trabajo. Nosotros lo implementamos y asumimos la Responsabilidad legal.
+              Asumimos el rol legal como responsables de la Seguridad y Salud en el Trabajo.
+              Diseñamos e implementamos su Sistema mes a mes, garantizando cumplimiento de la
+              Resolución 0312 de 2019.
             </p>
             <p className="mt-4 rounded-xl bg-navy-foreground/[0.06] px-4 py-3 text-sm text-navy-foreground/90">
               <span className="font-semibold text-gold">Resultado:</span> Su organización opera en
