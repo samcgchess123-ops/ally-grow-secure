@@ -1,12 +1,10 @@
-import { FileText, ArrowRight, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { whatsappUrl } from "./config";
+import { FileText, Download } from "lucide-react";
 
 const options = [
-  { key: "Gerencial", desc: "Dirección y estrategia" },
-  { key: "Gestión Humana", desc: "Selección e inducción" },
-  { key: "Compras", desc: "Proveedores y calidad" },
-  { key: "Mantenimiento", desc: "Equipos y activos" },
+  { key: "Gerencial", desc: "Dirección y estrategia", file: "/guias/Gerencial.docx" },
+  { key: "Gestión Humana", desc: "Selección e inducción", file: "/guias/Gestion_Humana.docx" },
+  { key: "Compras", desc: "Proveedores y calidad", file: "/guias/Compras.docx" },
+  { key: "Mantenimiento", desc: "Equipos y activos", file: "/guias/Mantenimiento.docx" },
 ];
 
 export function LeadMagnet() {
@@ -24,47 +22,34 @@ export function LeadMagnet() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-navy-foreground/75">
                 Si lo que necesitas hoy es organizar y estandarizar un área de tu empresa, hagámoslo
-                simple. Te enviaremos una <strong className="text-gold">Guía Práctica</strong> para
-                estructurarla paso a paso.
+                simple. Descarga la <strong className="text-gold">Guía Práctica</strong> del área que
+                necesitas estructurar — lista para aplicar, sin costo.
               </p>
-
-              <ul className="mt-6 grid gap-2.5">
-                {[
-                  "Procedimientos listos para aplicar",
-                  "Formatos descargables por área",
-                  "Acompañamiento de expertos en gestión",
-                ].map((b) => (
-                  <li key={b} className="flex items-center gap-2.5 text-sm text-navy-foreground/85">
-                    <CheckCircle2 className="size-5 shrink-0 text-gold" /> {b}
-                  </li>
-                ))}
-              </ul>
             </div>
 
             <div className="rounded-2xl border border-navy-foreground/10 bg-navy-foreground/[0.05] p-6 sm:p-8">
               <p className="text-sm font-medium text-navy-foreground/85">
-                👉 Elige la opción que te urge organizar y te enviaremos la guía por WhatsApp:
+                👉 Elige el área que necesitas organizar y descarga la guía:
               </p>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {options.map((o) => (
                   <a
                     key={o.key}
-                    href={whatsappUrl(`PROCESO ${o.key}`)}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={o.file}
+                    download
                     className="group flex flex-col rounded-xl border border-navy-foreground/15 bg-navy-foreground/[0.04] p-4 transition-all hover:border-gold hover:bg-navy-foreground/[0.08]"
                   >
                     <span className="font-bold text-navy-foreground">{o.key}</span>
                     <span className="mt-0.5 text-xs text-navy-foreground/60">{o.desc}</span>
                     <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-gold">
-                      Escribir "PROCESO {o.key}"
-                      <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
+                      <Download className="size-3.5 transition-transform group-hover:translate-y-0.5" />
+                      Descargar guía gratis
                     </span>
                   </a>
                 ))}
               </div>
               <p className="mt-5 text-center text-xs text-navy-foreground/55">
-                Sin costo. Recibirás la guía práctica directamente en tu WhatsApp.
+                Sin costo. Descarga directa, sin necesidad de registrarte.
               </p>
             </div>
           </div>
