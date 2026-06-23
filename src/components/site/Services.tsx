@@ -42,38 +42,28 @@ const services = [
 const plans = [
   {
     id: "esencial",
-    eyebrow: "Cumplimiento esencial",
+    eyebrow: "",
     standards: "7 estándares mínimos",
     price: "$300.000",
-    daily: "Empresas pequeñas de menor nivel de riesgo.",
-    features: ["Diseño e implementación", "Mantenimiento mensual", "Apoyo en inspecciones"],
+    daily: "Empleadores con 10 o menos trabajadores que estén clasificados en riesgo I, II o III en la ARL.",
+    features: ["Se enfoca en los pilares fundamentales: afiliación a seguridad social, estructuración del plan de trabajo, ejecuciones de capacitación, realización de evaluaciones médicas ocupacionales e identificación de peligros."],
   },
   {
     id: "integral",
-    eyebrow: "Cumplimiento integral",
+    eyebrow: "",
     standards: "21 estándares mínimos",
     price: "$700.000",
-    daily: "Empresas en crecimiento que buscan cumplimiento sólido y prevención de riesgos.",
-    features: [
-      "Todo lo del nivel esencial",
-      "Capacitaciones obligatorias",
-      "Informes de gestión mensuales",
-      "Acompañamiento experto",
-    ],
+    daily: "Empleadores con 11 a 50 trabajadores que estén clasificados en riesgo I, II o III en la ARL.",
+    features: ["Suma a la base de siete estándares, la gestión organizativa y de respuesta: conformación del COPASST y del Comité de Convivencia Laboral, estructuración de la brigada de emergencias e investigación obligatoria de accidentes de trabajo."],
     featured: true,
   },
   {
     id: "corporativo",
-    eyebrow: "Cumplimiento corporativo",
+    eyebrow: "",
     standards: "60 estándares mínimos",
     price: "$1.500.000",
-    daily: "Empresas con mayor riesgo o exigencias de grandes clientes.",
-    features: [
-      "Todo lo del nivel integral",
-      "Matriz legal actualizada",
-      "Acompañamiento integral",
-      "Preparación de auditorías",
-    ],
+    daily: "Empleadores con 50 o menos trabajadores siempre y cuando estén clasificados en Riesgo IV o V en la ARL.",
+    features: ["Contempla el ciclo completo del Sistema de Gestión. Integra los puntos anteriores y añade el control estratégico: auditorías anuales, medición de indicadores obligatorios, control de contratistas y diseño de programas de vigilancia epidemiológica (médicos especializados)."],
   },
 ];
 
@@ -93,12 +83,8 @@ function PlansBox({
           Planes y precios
         </span>
         <h3 className="mt-2 text-2xl font-extrabold text-navy-foreground sm:text-3xl">
-          Configure el nivel de cumplimiento de su empresa
+          Acompañamiento de acuerdo con el tamaño y nivel de riesgo de su empresa.
         </h3>
-        <p className="mx-auto mt-3 max-w-2xl text-sm text-navy-foreground/70">
-          Seleccione el alcance que mejor se adapte a sus obligaciones legales y objetivos de
-          crecimiento.
-        </p>
       </div>
 
       {/* Selector */}
@@ -115,7 +101,6 @@ function PlansBox({
                 : "border-navy-foreground/15 bg-navy-foreground/[0.04] hover:border-gold/50",
             )}
           >
-            <p className="text-[0.7rem] font-bold uppercase tracking-wide text-gold">{p.eyebrow}</p>
             <p className="mt-1 font-bold text-navy-foreground">{p.standards}</p>
             <p className="mt-1 text-sm text-navy-foreground/70">{p.price} / mes</p>
           </button>
@@ -125,9 +110,6 @@ function PlansBox({
       {/* Active plan detail */}
       <div className="mt-6 grid gap-6 rounded-2xl bg-card p-6 sm:grid-cols-2 sm:p-8">
         <div>
-          <p className="text-sm font-bold uppercase tracking-wide text-gold-foreground">
-            {active.eyebrow}
-          </p>
           <p className="mt-1 text-lg font-bold text-navy">{active.standards}</p>
           <p className="mt-2 text-sm text-muted-foreground">{active.daily}</p>
           <div className="mt-5 flex items-baseline gap-1">
@@ -140,8 +122,8 @@ function PlansBox({
         </div>
         <ul className="grid content-center gap-3">
           {active.features.map((f) => (
-            <li key={f} className="flex items-center gap-2.5 text-sm text-navy">
-              <Check className="size-4 shrink-0 text-gold-foreground" strokeWidth={3} /> {f}
+            <li key={f} className="flex items-start gap-2.5 text-sm text-navy">
+              <Check className="mt-0.5 size-4 shrink-0 text-gold-foreground" strokeWidth={3} /> {f}
             </li>
           ))}
           <li className="mt-2 flex items-center gap-2.5 text-sm font-medium text-navy">
@@ -190,9 +172,7 @@ export function Services() {
               SG-SST · Acompañamiento Permanente
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-navy-foreground/75">
-              Asumimos el rol legal como responsables de la Seguridad y Salud en el Trabajo.
-              Diseñamos e implementamos su Sistema mes a mes, garantizando cumplimiento de la
-              Resolución 0312 de 2019.
+              En Colombia, la resolución 0312 de 2019 establece que los empleadores, sin importar su sector y desde un solo trabajador, tenga un Sistema de Gestión de Seguridad y Salud en el Trabajo. Nosotros lo implementamos y asumimos la Responsabilidad legal.
             </p>
             <p className="mt-4 rounded-xl bg-navy-foreground/[0.06] px-4 py-3 text-sm text-navy-foreground/90">
               <span className="font-semibold text-gold">Resultado:</span> Su organización opera en
@@ -214,7 +194,7 @@ export function Services() {
             </p>
           </button>
 
-          {/* Mobile-only plans box: appears right below the SG-SST card */}
+          {/* Mobile-only plans box */}
           {showPlans && (
             <div className="animate-in fade-in slide-in-from-top-2 duration-300 lg:hidden">
               <PlansBox selected={selected} setSelected={setSelected} />
@@ -265,7 +245,7 @@ export function Services() {
           </article>
         </div>
 
-        {/* Desktop-only plans box: full width below the grid */}
+        {/* Desktop-only plans box */}
         {showPlans && (
           <div
             id="planes"

@@ -2,12 +2,12 @@ import { ShieldCheck, FolderCheck, Repeat, Briefcase, Gavel, ScrollText } from "
 import { SectionHeading } from "./SectionHeading";
 
 const benefits = [
-  { icon: ShieldCheck, title: "Blindaje ante sanciones", text: "Reduzca la exposición a multas y requerimientos legales." },
-  { icon: Gavel, title: "Tranquilidad ante auditorías", text: "Llegue preparado a cualquier inspección o visita." },
-  { icon: FolderCheck, title: "Evidencias en orden", text: "Soportes auditables y al día en todo momento." },
-  { icon: Repeat, title: "Cumplimiento continuo", text: "Un sistema activo mes a mes, no solo una implementación puntual." },
-  { icon: Briefcase, title: "Apertura comercial", text: "Cumpla los requisitos que exigen clientes y licitaciones." },
-  { icon: ScrollText, title: "Rol legal cubierto", text: "Asumimos formalmente la responsabilidad de sus sistemas." },
+  { icon: ShieldCheck, title: "Reduce al máximo la exposición a multas.", text: "" },
+  { icon: Gavel, title: "Cumplimiento legal y acompañamiento permanente.", text: "" },
+  { icon: FolderCheck, title: "Documentación almacenada cumpliendo con la norma.", text: "" },
+  { icon: Repeat, title: "Un sistema de gestión con resultados continuos.", text: "" },
+  { icon: Briefcase, title: "Oportunidad de ingreso a nuevos y mejores mercados.", text: "" },
+  { icon: ScrollText, title: "Un equipo competente que asume el rol legal.", text: "" },
 ];
 
 export function Benefits() {
@@ -17,7 +17,7 @@ export function Benefits() {
         <SectionHeading
           invert
           eyebrow="Resultados"
-          title="Lo que obtiene al trabajar con G3STION"
+          title="Lo que gana al contratar a G3STION"
           description="No describimos procesos: comunicamos lo que realmente cambia para su empresa."
         />
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
