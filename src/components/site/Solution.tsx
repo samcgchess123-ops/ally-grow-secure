@@ -37,7 +37,7 @@ export function Solution() {
           invert
           eyebrow="La solución"
           title="Acompañamiento que convierte el cumplimiento en ventaja competitiva"
-          description="En G3STION SAS nos convertimos en su aliado estratégico: asumimos formalmente la responsabilidad legal de sus sistemas de gestión, programas y planes normativos, diseñando soluciones a la medida de su sector."
+          description="En G3STION SAS nos convertimos en su aliado estratégico: asumimos formalmente la responsabilidad legal de sus sistemas de gestión, programas y planes normativos, diseñando soluciones a la medida de su sector, manteniéndolas actualizadas."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2">

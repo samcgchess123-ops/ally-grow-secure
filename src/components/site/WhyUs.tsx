@@ -1,15 +1,4 @@
-import { Check } from "lucide-react";
 import ceoImg from "@/assets/why-us-person.jpg";
-
-const credentials = [
-  "+15 años de experiencia en sistemas de gestión legales en Colombia",
-  "Empresa legalmente constituida hace más de 9 años · G3STION SAS",
-  "Asunción formal del rol legal como responsable del SG-SST",
-  "Experiencia en construcción, industrial, servicios, salud, logística y comercio",
-  "Diagnóstico inicial gratuito para cada empresa",
-  "Acompañamiento en visitas del Ministerio de Trabajo e inspecciones",
-  "Red de profesionales especializados por área normativa",
-];
 
 export function WhyUs() {
   return (
@@ -38,25 +27,23 @@ export function WhyUs() {
             Por qué trabajar con nosotros
           </span>
           <h2 className="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
-            Más de 15 años construyendo confianza, empresa por empresa
+            Más de 15 años de trayectoria profesional
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            G3STION SAS nació de una convicción simple: las pymes colombianas merecen el mismo nivel
-            de asesoría especializada que las empresas grandes, sin las inversiones elevadas que solo
-            ellas pueden asumir. Nuestros clientes no nos contratan por un trámite, sino porque
-            necesitan a alguien en quien confiar.
+            Nos especializamos en transformar el cumplimiento normativo en crecimiento para las empresas. Nuestra gestión combina la responsabilidad con la capacidad para optimizar los recursos.
           </p>
-
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-            {credentials.map((c) => (
-              <li key={c} className="flex items-start gap-2.5">
-                <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-gold">
-                  <Check className="size-3.5 text-gold-foreground" strokeWidth={3} />
-                </span>
-                <span className="text-sm text-navy">{c}</span>
-              </li>
-            ))}
-          </ul>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            Contamos con experiencia comprobada liderando y superando con éxito auditorías ante entes gubernamentales, organismos de certificación internacional y la ONAC.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            A través de G3STION SAS, firma legalmente constituida hace más de 9 años, demostramos que las empresas pueden operar con el estándar de las grandes Organizaciones sin asumir costos desproporcionados. Nosotros creamos valor y aportamos al crecimiento de las empresas.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            Experiencia en sectores como construcción, industria, servicios, salud, logística, comercio, entre otras.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            Evaluamos su estado actual sin compromiso para trazar la hoja de ruta exacta hacia su blindaje total.
+          </p>
         </div>
       </div>
     </section>

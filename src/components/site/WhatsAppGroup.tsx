@@ -58,7 +58,7 @@ export function WhatsAppGroup() {
 
               <Button asChild variant="whatsapp" size="lg" className="mt-8 h-auto w-full whitespace-normal py-3 text-center sm:w-auto">
                 <a
-                  href={whatsappUrl("Hola G3STION SAS, quiero unirme GRATIS al Grupo de WhatsApp de Marco legal SST Colombia.")}
+                  href="https://chat.whatsapp.com/JJX7GBLVS7EBl7tPt7jPDx?mode=gi_t"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
