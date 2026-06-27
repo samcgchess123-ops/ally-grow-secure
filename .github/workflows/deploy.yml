@@ -20,22 +20,12 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Clear public_html
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          port: 65002
-          script: rm -rf /home/u979351849/domains/g3stion.com/public_html/*
-
-      - name: Copy dist to public_html
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          port: 65002
-          source: "dist/"
-          target: "/home/u979351849/domains/g3stion.com/public_html"
-          strip_components: 1
+      - name: Push dist to deploy branch
+        run: |
+          cd dist
+          git init
+          git config user.email "deploy@github.com"
+          git config user.name "GitHub Actions"
+          git add .
+          git commit -m "Deploy"
+          git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/samcgchess123-ops/ally-grow-secure.git HEAD:dist
