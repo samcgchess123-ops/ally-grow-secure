@@ -20,13 +20,24 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Deploy to Hostinger via SFTP
+      - name: Deploy to Hostinger via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /home/u979351849/domains/g3stion.com/public_html
+            rm -rf *
+
+      - name: Copy files via SCP
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.FTP_PASS }}
-          port: 22
+          port: ${{ secrets.SSH_PORT }}
           source: "dist/*"
           target: "/home/u979351849/domains/g3stion.com/public_html"
           strip_components: 1
