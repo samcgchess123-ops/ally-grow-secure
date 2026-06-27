@@ -20,24 +20,22 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Deploy to Hostinger via SSH
+      - name: Clear public_html
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.FTP_PASS }}
           port: 65002
-          script: |
-            cd /home/u979351849/domains/g3stion.com/public_html
-            rm -rf *
+          script: rm -rf /home/u979351849/domains/g3stion.com/public_html/*
 
-      - name: Copy files via SCP
+      - name: Copy dist to public_html
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.FTP_PASS }}
           port: 65002
-          source: "dist/*"
+          source: "dist/"
           target: "/home/u979351849/domains/g3stion.com/public_html"
           strip_components: 1
