@@ -37,7 +37,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.FTP_PASS }}
-          port: ${{ secrets.SSH_PORT }}
+          port: 65002
           source: "dist/*"
           target: "/home/u979351849/domains/g3stion.com/public_html"
           strip_components: 1
