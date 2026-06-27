@@ -41,3 +41,6 @@ jobs:
           source: "dist/*"
           target: "/home/u979351849/domains/g3stion.com/public_html"
           strip_components: 1
+
+
+        
